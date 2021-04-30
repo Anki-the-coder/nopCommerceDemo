@@ -1,0 +1,11 @@
+1619296191986	geckodriver	INFO	Listening on 127.0.0.1:62793
+1619296195079	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\WingS\\AppData\\Local\\Temp\\rust_mozprofileH1fFHi"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619296215502	Marionette	INFO	Listening on port 62810
+1619296216296	Marionette	WARN	TLS certificate errors will be ignored for this session
+1619296226359	Marionette	INFO	Stopped listening on port 62810
+JavaScript error: https://admin-demo.nopcommerce.com/lib_npm/jquery/jquery.min.js, line 2: NS_ERROR_NOT_INITIALIZED: 
+[Parent 13492, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
