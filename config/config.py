@@ -10,4 +10,7 @@ class TestData :
     """Elements on Home Page"""
     Home_page_title = "Dashboard / nopCommerce administration"
     search_customers = "customers"
+    
+    """Elements on Search Pages"""
+    search_page_title = "Customers / nopCommerce administration"
 
