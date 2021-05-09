@@ -1,11 +1,12 @@
 import logging
+import requests
 
-class logGen :
+
+
+class logGen:
     @staticmethod
     def log():
-        logging.basicConfig(filename=".\\logs\\auto.log",
-                            format = '%(asctime)s: %(levelname)s: %(message)s', datefmt='%m/%d/%y %I:%M%S %p')
+        logging.basicConfig(filename=".\\logs\\auto.log",filemode="w")
         logger = logging.getLogger()
-        logger.setLevel(logging.INFO)
+        logger.setLevel(logging.WARNING)
         return logger
-

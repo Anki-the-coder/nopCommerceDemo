@@ -7,13 +7,12 @@ from utilities.logger import logGen
 
 class Test_login(BaseTest):
     log = logGen.log()
-
     def test_verify_login_page_title(self):
         login = LoginPage(self.driver)
-        self.log.info("Verifying Title of Login Page")
+        print(self.log.warning("Verifying Title of Login Page"))
         final_title = login.get_login_page_title(TestData.Login_page_title)
-        assert final_title == TestData.Login_page_title , self.log.error("Title of login page is different")
-        self.log.info("Title of login page verified")
+        assert final_title == TestData.Login_page_title , self.log.warning("Title of login page is different")
+        self.log.warning("Title of login page verified")
 
 
     def test_verify_login(self):
