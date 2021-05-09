@@ -12,17 +12,15 @@ class Test_login(BaseTest):
         login = LoginPage(self.driver)
         self.log.info("Verifying Title of Login Page")
         final_title = login.get_login_page_title(TestData.Login_page_title)
-        assert final_title == TestData.Login_page_title , self.log.error("Title of login page is different")
+        assert final_title == TestData.Login_page_title, self.log.error("Title of login page is different")
         self.log.info("Title of login page verified")
-
 
     def test_verify_login(self):
         login = LoginPage(self.driver)
-        Home  = login.perform_login(TestData.User_name,TestData.Password)
-        #time.sleep(2)
+        Home = login.perform_login(TestData.User_name, TestData.Password)
+        # time.sleep(2)
 
-
-        #Using assert and Login Page class object
+        # Using assert and Login Page class object
         # logout = login.is_logout_visbile()
         # assert logout ,"Login Failed"
 
@@ -32,15 +30,14 @@ class Test_login(BaseTest):
         # else :
         #     print("Login Successful")
 
-        #using if else and Home Page Class obj
-        #Home = HomePage(self.driver)
+        # using if else and Home Page Class obj
+        # Home = HomePage(self.driver)
 
         # if Home.is_visible_logout_link() :
         #     print("pass")
         # else:
         #     print("fail")
 
-        #Using Assert and Home page Cls obj
+        # Using Assert and Home page Cls obj
         ele = Home.is_visible_logout_link()
         assert ele
-
