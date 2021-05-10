@@ -1,5 +1,5 @@
 import time
-
+from Tests.test_Base import BaseTest
 from Pages.HomePage import HomePage
 from Pages.LoginPage import LoginPage
 import pytest
@@ -11,12 +11,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-@pytest.mark.usefixtures("init_driver")
-class Test_Home():
+# @pytest.mark.usefixtures("init_driver")
+class Test_Home(BaseTest):
 
     def test_verify_homePage_title(self):
         login = LoginPage(self.driver)
-        home = login.perform_login(TestData.User_name,TestData.Password)
+        home = login.perform_login(TestData.User_name, TestData.Password)
         home_pageTitle = home.get_Home_Page_title(TestData.Home_page_title)
         assert home_pageTitle == TestData.Home_page_title
 
@@ -27,5 +27,4 @@ class Test_Home():
         srch_cust = home.select_cust_option()
         assert srch_cust.is_srch_button_visible()
         print(srch_cust.is_srch_button_visible())
-        #time.sleep(3)
-
+        # time.sleep(3)

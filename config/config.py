@@ -1,4 +1,5 @@
 class TestData:
+
     User_name = "admin@yourstore.com"
     Password = "admin"
 
@@ -12,3 +13,4 @@ class TestData:
 
     """Elements on Search Pages"""
     search_page_title = "Customers / nopCommerce administration"
+
